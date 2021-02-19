@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'futura';
+    src: local('futura'), url(./fonts/futura.ttf) format('truetype');
+}
+
+.btn-primary {
+    background-color: #f38a34;
+    border-color: white;
+    color: white;
+}
+
+.panel-primary {
+    background-color: #f38a34;
+    border-color: white;
+    color: white;
+}
+
+.panel-primary > a:link,
+a:visited,
+a:hover,
+a:active {
+    color: white;
+}
