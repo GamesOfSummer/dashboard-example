@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import MainPageContent from './MainPageContent';
 import { callAsyncGetPictures } from '../redux/pictureActions';
-import LineChart2 from './graphs';
-
 
 const Main = () => {
     const dispatch = useDispatch();
@@ -25,9 +23,7 @@ const Main = () => {
                 <Router>
                     <Switch>
                         <Route path="/aboutme" component={AboutMe} />
-                        <Route exact path="/" component={LineChart2} />
-                        <Route exact path="//" component={MainPageContent} />
-                     
+                        <Route exact path="/" component={MainPageContent} />
                     </Switch>
                 </Router>
             </div>
