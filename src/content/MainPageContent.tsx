@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import Cards from '../components/Cards';
 import JumbotronPage from './JumbotronPage';
 
-import LineChart2 from './graphs';
+import LineChart2 from './lineChartExample';
 import AreaChartExample from './areaChart';
 import PieChartExample from './pieChart';
 
@@ -13,6 +13,7 @@ const MainPageContent = () => {
             <Row>
                 <Col>
                     {' '}
+                    <AreaChartExample />
                     <LineChart2 />
                 </Col>
                 <Col>
