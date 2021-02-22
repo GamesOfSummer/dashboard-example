@@ -10,29 +10,18 @@ import {
     CartesianGrid,
     Tooltip,
     ResponsiveContainer,
+    Cell,
 } from 'recharts';
 
 // import "./styles.css";
 
 const PieChartExample = () => {
-    const data01 = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
-    ];
-    const data02 = [
-        { name: 'A1', value: 100 },
-        { name: 'A2', value: 300 },
-        { name: 'B1', value: 100 },
-        { name: 'B2', value: 80 },
-        { name: 'B3', value: 40 },
-        { name: 'B4', value: 30 },
-        { name: 'B5', value: 50 },
-        { name: 'C1', value: 100 },
-        { name: 'C2', value: 200 },
-        { name: 'D1', value: 150 },
-        { name: 'D2', value: 50 },
+    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+
+    const data = [
+        { name: 'Group A', value: 90 },
+        { name: 'Group B', value: 8 },
+        { name: 'Group C', value: 2 },
     ];
 
     return (
@@ -41,22 +30,21 @@ const PieChartExample = () => {
                 <Pie
                     dataKey="value"
                     isAnimationActive={false}
-                    data={data01}
+                    data={data}
                     cx="50%"
                     cy="50%"
                     outerRadius={80}
                     fill="#8884d8"
                     label
-                />
-                <Pie
-                    dataKey="value"
-                    data={data02}
-                    cx={500}
-                    cy={200}
-                    innerRadius={40}
-                    outerRadius={80}
-                    fill="#82ca9d"
-                />
+                >
+                    {data.map((entry, index) => (
+                        <Cell
+                            // key=index
+                            fill={COLORS[index % COLORS.length]}
+                        />
+                    ))}
+                </Pie>
+
                 <Tooltip />
             </PieChart>
         </div>
