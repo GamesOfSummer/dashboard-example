@@ -31,7 +31,7 @@ const LineChart2 = () => {
         {
             name: 'Page C',
             uv: 2000,
-            pv: 9800,
+            pv: 300,
             amt: 2290,
         },
         {
@@ -87,6 +87,12 @@ const LineChart2 = () => {
                 <Line
                     type="monotone"
                     dataKey="uv"
+                    stroke="#82ca9d"
+                    strokeDasharray="3 4 5 2"
+                />
+                <Line
+                    type="monotone"
+                    dataKey="amt"
                     stroke="#82ca9d"
                     strokeDasharray="3 4 5 2"
                 />
