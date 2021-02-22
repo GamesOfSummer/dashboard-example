@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 import Cards from '../components/Cards';
 import JumbotronPage from './JumbotronPage';
 
@@ -9,9 +10,17 @@ import PieChartExample from './pieChart';
 const MainPageContent = () => {
     return (
         <div>
-            <AreaChartExample />
-            <LineChart2 />
-            <PieChartExample />
+            <Row>
+                <Col>
+                    {' '}
+                    <LineChart2 />
+                </Col>
+                <Col>
+                    {' '}
+                    <PieChartExample />
+                </Col>
+            </Row>
+
             <JumbotronPage />
             <main>
                 <div className="container">{Cards()}</div>
