@@ -16,32 +16,30 @@ import {
 // import "./styles.css";
 
 const PieChartExample = () => {
-    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+    const COLORS = ['#009993', '#cccc99', '#cc0033'];
 
     const data = [
-        { name: 'Group A', value: 90 },
-        { name: 'Group B', value: 8 },
-        { name: 'Group C', value: 2 },
+        { name: 'Active', value: 90 },
+        { name: 'Errors', value: 8 },
+        { name: 'Down', value: 2 },
     ];
 
     return (
         <div>
+            <h5>Uptime</h5>
             <PieChart width={400} height={400}>
                 <Pie
                     dataKey="value"
                     isAnimationActive={false}
                     data={data}
-                    cx="50%"
+                    cx="70%"
                     cy="50%"
                     outerRadius={80}
                     fill="#8884d8"
                     label
                 >
                     {data.map((entry, index) => (
-                        <Cell
-                            // key=index
-                            fill={COLORS[index % COLORS.length]}
-                        />
+                        <Cell fill={COLORS[index % COLORS.length]} />
                     ))}
                 </Pie>
 
