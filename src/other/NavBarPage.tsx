@@ -7,7 +7,7 @@ const NavBarPage = () => {
         <div>
             <div
                 className="panel-primary"
-                style={{ height: '100px', width: '100%' }}
+                style={{ height: '85px', width: '100%' }}
             >
                 <Image
                     src={Logo}
@@ -17,14 +17,6 @@ const NavBarPage = () => {
                         float: 'left',
                     }}
                 />
-                <div
-                    style={{
-                        float: 'right',
-                        width: '100px',
-                    }}
-                >
-                    Hire Me!
-                </div>
             </div>
         </div>
     );

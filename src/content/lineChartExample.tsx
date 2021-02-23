@@ -17,51 +17,40 @@ import {
 const LineChart2 = () => {
     const data = [
         {
-            name: 'Page A',
-            uv: 4000,
-            pv: 2400,
-            amt: 2400,
+            name: 'NOV',
+            district1: 1000,
+            district2: 400,
+            district3: 600,
         },
         {
-            name: 'Page B',
-            uv: 3000,
-            pv: 1398,
-            amt: 2210,
+            name: 'DEC',
+            district1: 1000,
+            district2: 1398,
+            district3: 1210,
         },
         {
-            name: 'Page C',
-            uv: 2000,
-            pv: 300,
-            amt: 2290,
+            name: 'JAN',
+            district1: 2000,
+            district2: 300,
+            district3: 2290,
         },
         {
-            name: 'Page D',
-            uv: 2780,
-            pv: 3908,
-            amt: 2000,
+            name: 'FEB',
+            district1: 2780,
+            district2: 3908,
+            district3: 2000,
         },
         {
-            name: 'Page E',
-            uv: 1890,
-            pv: 4800,
-            amt: 2181,
-        },
-        {
-            name: 'Page F',
-            uv: 2390,
-            pv: 3800,
-            amt: 2500,
-        },
-        {
-            name: 'Page G',
-            uv: 3490,
-            pv: 4300,
-            amt: 2100,
+            name: 'MAR',
+            district1: 5890,
+            district2: 4800,
+            district3: 2181,
         },
     ];
 
     return (
         <div>
+            <h5>Users per Month</h5>
             <LineChart
                 width={500}
                 height={300}
@@ -78,22 +67,23 @@ const LineChart2 = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
+
                 <Line
                     type="monotone"
-                    dataKey="pv"
-                    stroke="#8884d8"
-                    strokeDasharray="5 5"
-                />
-                <Line
-                    type="monotone"
-                    dataKey="uv"
+                    dataKey="district1"
                     stroke="#82ca9d"
                     strokeDasharray="3 4 5 2"
                 />
                 <Line
                     type="monotone"
-                    dataKey="amt"
-                    stroke="#82ca9d"
+                    dataKey="district2"
+                    stroke="#8884d8"
+                    strokeDasharray="5 5"
+                />
+                <Line
+                    type="monotone"
+                    dataKey="district3"
+                    stroke="#66ca9d"
                     strokeDasharray="3 4 5 2"
                 />
             </LineChart>

@@ -16,44 +16,44 @@ import {
 const AreaChartExample = () => {
     const data = [
         {
-            name: 'Page A',
-            uv: 4000,
-            pv: 2400,
-            amt: 2400,
+            name: 'SUN',
+            uv: 5000,
+            pv: 3400,
+            amt: 3200,
         },
         {
-            name: 'Page B',
+            name: 'MON',
             uv: 3000,
             pv: 1398,
-            amt: 2210,
+            amt: 1210,
         },
         {
-            name: 'Page C',
+            name: 'TUES',
             uv: 2000,
             pv: 9800,
             amt: 2290,
         },
         {
-            name: 'Page D',
+            name: 'WEDS',
             uv: 2780,
             pv: 3908,
             amt: 2000,
         },
         {
-            name: 'Page E',
+            name: 'THR',
             uv: 1890,
             pv: 4800,
             amt: 2181,
         },
         {
-            name: 'Page F',
+            name: 'FRI',
             uv: 2390,
             pv: 3800,
             amt: 2500,
         },
         {
-            name: 'Page G',
-            uv: 3490,
+            name: 'SAT',
+            uv: 10490,
             pv: 4300,
             amt: 2100,
         },
@@ -61,6 +61,7 @@ const AreaChartExample = () => {
 
     return (
         <div>
+            <h5>Load per week</h5>
             <AreaChart
                 width={500}
                 height={400}

@@ -11,11 +11,16 @@ const JumbotronPage = () => {
 
     return (
         <Jumbotron>
-            <h1>$13,500 per month</h1>
-            <p>Includes costs</p>
+            <h1>$130,000 per month</h1>
+            <p>$70,000 from Team A</p>
+            <p>$40,000 from Team B</p>
+            <p>$30,000 from Team C</p>
             <p>
                 <Button variant="primary" onClick={handleClick}>
                     Breakdown
+                </Button>
+                <Button variant="primary" onClick={handleClick}>
+                    Chat with Team Leads
                 </Button>
             </p>
         </Jumbotron>
