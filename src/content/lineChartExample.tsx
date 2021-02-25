@@ -71,19 +71,19 @@ const LineChart2 = () => {
                 <Line
                     type="monotone"
                     dataKey="district1"
-                    stroke="#82ca9d"
+                    stroke="#f38a34"
                     strokeDasharray="3 4 5 2"
                 />
                 <Line
                     type="monotone"
                     dataKey="district2"
-                    stroke="#8884d8"
+                    stroke="#f38a34"
                     strokeDasharray="5 5"
                 />
                 <Line
                     type="monotone"
                     dataKey="district3"
-                    stroke="#66ca9d"
+                    stroke="#f38a34"
                     strokeDasharray="3 4 5 2"
                 />
             </LineChart>
