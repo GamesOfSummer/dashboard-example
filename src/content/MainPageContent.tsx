@@ -17,9 +17,10 @@ const MainPageContent = () => {
             </Row>
 
             <Row>
-                <Col>
+                <Col style={{ marginBottom: '30px' }}>
                     {' '}
                     <AreaChartExample />
+                    <div style={{ padding: '10px' }} />
                     <LineChartExample />
                 </Col>
                 <Col>

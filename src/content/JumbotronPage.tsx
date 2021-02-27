@@ -16,12 +16,8 @@ const JumbotronPage = () => {
             <p>$40,000 from Team B</p>
             <p>$30,000 from Team C</p>
             <p>
-                <Button variant="primary" onClick={handleClick}>
-                    Breakdown
-                </Button>
-                <Button variant="primary" onClick={handleClick}>
-                    Chat with Team Leads
-                </Button>
+                <Button variant="primary">Breakdown</Button>
+                <Button variant="primary">Chat with Team Leads</Button>
             </p>
         </Jumbotron>
     );
