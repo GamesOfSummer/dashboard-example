@@ -19,7 +19,7 @@ const Main = () => {
 
     return (
         <div>
-            <div style={{ minHeight: '1000px' }}>
+            <div>
                 <Router>
                     <Switch>
                         <Route path="/aboutme" component={AboutMe} />

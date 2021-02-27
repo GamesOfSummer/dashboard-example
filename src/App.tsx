@@ -27,19 +27,20 @@ const App = () => {
     const styles = {
         padding: '0px',
         fontFamily: 'futura',
+        overflow: 'hidden',
     };
 
     return (
         <Provider store={store}>
             <Container fluid style={styles}>
                 <NavBarPage />
-                <div style={{ minHeight: '1000px' }}>
+                <div style={{ minHeight: '800px' }}>
                     <Row>
-                        <Col xs={2} lg={1} xl={1} />
-                        <Col xs={5} lg={10} xl={10}>
+                        <Col xs={2} lg={2} />
+                        <Col xs={8} lg={8}>
                             <Main />
                         </Col>
-                        <Col xs={2} lg={1} xl={1} />
+                        <Col xs={2} lg={2} />
                     </Row>
                 </div>
                 <FooterPage />

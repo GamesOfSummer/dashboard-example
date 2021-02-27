@@ -13,6 +13,7 @@ const MainPageContent = () => {
             <Row className="justify-content-md-center">
                 <Col md="auto">
                     <h1>Dashboard Example</h1>
+                    <div style={{ padding: '10px' }} />
                 </Col>
             </Row>
 
