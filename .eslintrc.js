@@ -15,7 +15,6 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'airbnb',
-        'prettier',
         'plugin:prettier/recommended',
     ],
     parser: '@typescript-eslint/parser',
@@ -38,6 +37,6 @@ module.exports = {
         'import/extensions': ['off'],
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': ['error'],
-        'no-unused-vars' :  ['warn'],
+        'no-unused-vars': ['warn'],
     },
 };
