@@ -4,6 +4,7 @@ import Cards from '../components/Cards';
 import JumbotronPage from './JumbotronPage';
 import AreaChartExample from './areaChart';
 import PieChartExample from './pieChart';
+import PieChartExample2 from './pieChart2';
 import LineChartExample from './lineChartExample';
 
 const MainPageContent = () => {
@@ -27,13 +28,18 @@ const MainPageContent = () => {
                         <Card.Body>You have one new notification.</Card.Body>
                     </Card>
                     <JumbotronPage />
-                    <PieChartExample />
+                    <Row>
+                        {' '}
+                        <Col>
+                            {' '}
+                            <PieChartExample />
+                        </Col>
+                        <Col>
+                            <PieChartExample2 />
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
-
-            <main>
-                <div className="container">{Cards()}</div>
-            </main>
         </div>
     );
 };

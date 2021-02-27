@@ -15,18 +15,18 @@ import {
 
 // import "./styles.css";
 
-const PieChartExample = () => {
+const PieChartExample2 = () => {
     const COLORS = ['#E66800', '#FAAE70', '#FFE1DA'];
 
     const data = [
-        { name: 'Paypal', value: 90 },
-        { name: 'Venmo', value: 8 },
-        { name: 'Other', value: 2 },
+        { name: 'Paypal', value: 50 },
+        { name: 'Venmo', value: 40 },
+        { name: 'Other', value: 10 },
     ];
 
     return (
         <div>
-            <h5>Income Sources</h5>
+            <h5>Outcome Sources</h5>
             <PieChart width={400} height={300}>
                 <Pie
                     dataKey="value"
@@ -49,4 +49,4 @@ const PieChartExample = () => {
     );
 };
 
-export default PieChartExample;
+export default PieChartExample2;

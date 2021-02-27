@@ -53,7 +53,7 @@ const LineChart2 = () => {
             <h5>Users per Month</h5>
             <LineChart
                 width={500}
-                height={300}
+                height={400}
                 data={data}
                 margin={{
                     top: 5,
@@ -71,20 +71,14 @@ const LineChart2 = () => {
                 <Line
                     type="monotone"
                     dataKey="district1"
-                    stroke="#f38a34"
+                    stroke="#FFE1DA"
                     strokeDasharray="3 4 5 2"
                 />
                 <Line
                     type="monotone"
                     dataKey="district2"
-                    stroke="#f38a34"
+                    stroke="#E66800"
                     strokeDasharray="5 5"
-                />
-                <Line
-                    type="monotone"
-                    dataKey="district3"
-                    stroke="#f38a34"
-                    strokeDasharray="3 4 5 2"
                 />
             </LineChart>
         </div>
