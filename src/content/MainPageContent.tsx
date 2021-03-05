@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import Cards from '../components/Cards';
 import JumbotronPage from './JumbotronPage';
 import AreaChartExample from './areaChart';
 import PieChartExample from './pieChart';

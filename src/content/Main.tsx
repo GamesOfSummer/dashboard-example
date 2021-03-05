@@ -1,28 +1,13 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-import AboutMe from './AboutMe';
 import MainPageContent from './MainPageContent';
-import { callAsyncGetPictures } from '../redux/pictureActions';
 
 const Main = () => {
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        const fetchData = async () => {
-            await dispatch(callAsyncGetPictures());
-        };
-
-        fetchData();
-    }, []);
-
     return (
         <div>
             <div>
                 <Router>
                     <Switch>
-                        <Route path="/aboutme" component={AboutMe} />
                         <Route exact path="/" component={MainPageContent} />
                     </Switch>
                 </Router>
